@@ -12,7 +12,8 @@
             box-sizing: border-box;
         }
 
-        nav,.navbar {
+        nav,
+        .navbar {
             display: flex;
             justify-content: space-around;
             list-style: none;
@@ -21,19 +22,101 @@
             text-transform: uppercase;
             color: aliceblue;
         }
-        .container{
+
+        .container {
             background-image: url(../IMAGES/north.jpg);
             clip-path: polygon(0 0, 100% 0, 100% 51%, 52% 100%, 0% 50%);
-                        height: 100vh;
+            height: 100vh;
         }
-        .text{
+
+        .text {
             color: aliceblue;
             margin: 100px auto;
             width: 50%;
             text-align: center;
             padding: 20px;
         }
-       
+
+        .main {
+            display: flex;
+            width: 90%;
+            margin: 100px auto;
+            text-align: center;
+            position: relative;
+            padding-top: 100px;
+        }
+
+        .i1>h1 {
+            font-size: 20px;
+            color: tomato;
+        }
+
+        .i1 img {
+            position: absolute;
+        }
+
+        .p1 {
+            left: 113px;
+            bottom: 62px;
+        }
+
+        .p2 {
+            left: 143px;
+            bottom: 93px;
+
+        }
+
+        .p3 {
+            left: 35%;
+            bottom: 69px
+        }
+
+        .p4 {
+            left: 37%;
+            bottom: 94px;
+        }
+
+        .p5 {
+            left: 60%;
+            bottom: 69px
+        }
+
+        .p6 {
+            left: 62%;
+            bottom: 94px;
+
+        }
+
+        .p7 {
+            right: 10%;
+            bottom: 69px
+        }
+
+        .p8 {
+            right: 12%;
+            bottom: 94px;
+
+        }
+
+        .btn {
+            padding: 100px;
+
+        }
+
+        .btn2 {
+            border: 1px rgb(240, 237, 237) solid;
+            padding: 15px;
+            background-color: transparent;
+            color: aliceblue;
+
+        }
+
+        .btn1 {
+            background-color: tomato;
+            color: aliceblue;
+            padding: 15px;
+            border: none;
+        }
     </style>
 </head>
 
@@ -58,10 +141,46 @@
             </nav>
             <div class="text">
                 <h1>WELCOME TO THE SKY</h1><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste nobis at, suscipit vero architecto, omnis a, nesciunt quis consequatur nihil est ea. Ullam ipsa consequuntur iste incidunt non ipsam.</p>
+                <img src="../IMAGES/Design.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste nobis at, suscipit vero
+                    architecto, omnis a, nesciunt quis consequatur nihil est ea. Ullam ipsa consequuntur iste incidunt
+                    non ipsam.</p>
+                <div class="btn">
+                    <button class="btn1">GET STARTED NOW</button>
+                    <button class="btn2">LEARN MORE</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="i1">
+                <img src="../IMAGES/1.png" alt="" class="p1">
+                <img src="../IMAGES/1 (1).png" alt="" class="p2">
+                <h1>SLEEK DESIGN</h1>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, commodi?</P>
+            </div>
+            <div class="i1">
+                <img src="../IMAGES/2.png" alt="" class="p3">
+                <img src="../IMAGES/2 (1).png" alt="" class="p4">
+                <h1>CLEAN CODE</h1>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, commodi?</P>
+
+            </div>
+            <div class="i1">
+                <img src="../IMAGES/3.png" alt="" class="p5">
+                <img src="../IMAGES/3 (1).png" alt="" class="p6">
+                <h1>CREATIVE IDEAS</h1>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, commodi?</P>
+
+            </div>
+            <div class="i1">
+                <img src="../IMAGES/4.png" alt="" class="p7">
+                <img src="../IMAGES/4 (1).png" alt="" class="p8">
+                <h1>FREE SUPPORT</h1>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, commodi?</P>
+
             </div>
 
-            
         </div>
     </header>
 </body>
