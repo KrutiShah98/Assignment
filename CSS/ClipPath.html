@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip Path</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav,.navbar {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            gap: 50px;
+            padding-top: 20px;
+            text-transform: uppercase;
+            color: aliceblue;
+        }
+        .container{
+            background-image: url(../IMAGES/north.jpg);
+            clip-path: polygon(0 0, 100% 0, 100% 51%, 52% 100%, 0% 50%);
+                        height: 100vh;
+        }
+        .text{
+            color: aliceblue;
+            margin: 100px auto;
+            width: 50%;
+            text-align: center;
+            padding: 20px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div>
+                    <img src="../IMAGES/Logo.png" alt="">
+                </div>
+                <div>
+                    <ul class="navbar">
+                        <li>Home</li>
+                        <li>About US</li>
+                        <li>Portfolio</li>
+                        <li>Pricing</li>
+                        <li>Team</li>
+                        <li>contact</li>
+
+                    </ul>
+                </div>
+            </nav>
+            <div class="text">
+                <h1>WELCOME TO THE SKY</h1><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste nobis at, suscipit vero architecto, omnis a, nesciunt quis consequatur nihil est ea. Ullam ipsa consequuntur iste incidunt non ipsam.</p>
+            </div>
+
+            
+        </div>
+    </header>
+</body>
+
+</html>

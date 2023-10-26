@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waves</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background: url(../IMAGES/Background\ \(1\).png);
+            height: 100vh;
+            color: aliceblue;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .text {
+            text-align: center;
+            padding: 10%;
+        }
+        .wave img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+        }
+        #i1{
+            top: 58%;
+            left: 10%;
+        }
+        #i2{
+            top: 59%;
+            left: 30%;
+        }
+            #i4{
+            top: 59%;
+            left: 56%;
+        }
+        #i5{
+            top: 56%;
+            left: 70%;
+        }
+        .abc{
+            position: absolute;
+            color: aliceblue;
+            bottom: 10%;
+            left: 25%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Our Team</h1>
+            <p>Meet the craziest team. Share your thoughts with them.</p>
+        </div>
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ff5500" fill-opacity="0.3"
+                    d="M0,192L48,176C96,160,192,128,288,106.7C384,85,480,75,576,85.3C672,96,768,128,864,128C960,128,1056,96,1152,69.3C1248,43,1344,21,1392,10.7L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+            <img src="../IMAGES/abstract-fluid-iridescent-holographic-neon-260nw-2236471477.jpg" alt="" id="i1">
+            <img src="../IMAGES/white-bedroom-kale-green-armchair-260nw-646806094.jpg" alt="" id="i2">
+            <img src="../IMAGES/Put Your Image.png" alt="" id="i3">
+            <img src="../IMAGES/diverse-amazon-forest-seen-above-260nw-2072628056.jpg" alt="" id="i4">
+            <img src="../IMAGES/green-apple-raw-fruit-vegetable-260nw-312027470.jpg" alt="" id="i5">
+
+            <h1 class="abc">Web Designer</h1>
+
+        </div>
+    </div>
+</body>
+
+</html>
