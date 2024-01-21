@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* background-color: wheat; */
+        }
+body{
+    background-image: url(../IMAGES/images.jfif);
+}
+        h1,
+        h2 {
+            text-align: center;
+            color: rgb(17, 9, 7);
+        }
+
+        label {
+            margin-left: 20%;
+            color: brown;
+            font-weight: 500;
+            display: inline-block;
+            width: 200px;
+        }
+
+        .box {
+            border: 2px rgb(172, 43, 43) solid;
+            width: 700px;
+            margin: 0 auto;
+            background-color: rgb(182, 142, 89);
+        }
+
+        .re {
+            background-color: azure;
+            color: brown;
+            font-weight: 800;
+            margin-left: 340px;
+            width: 180px;
+        }
+
+        .total {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Result</h1>
+        <h2>Enter the Marks and Get Your Result NOw!</h2>
+        <br>
+        <div>
+            <label for="">1.C LANGUAGE</label>
+            <input type="number" id="c" value="">
+            <br><br>
+            <label for="">2.C ++ LANGUAGE </label>
+            <input type="number" id="cl" value=""> <br><br>
+            <label for="">3.DATABASE</label>
+            <input type="number" id="db" value=""> <br><br>
+            <label for="">4.HTML</label>
+            <input type="number" id="ht" value=""> <br><br>
+            <label for="">5.CSS</label>
+            <input type="number" id="cs" value=""> <br><br>
+            <label for="">6.PHP</label>
+            <input type="number" id="ph" value=""> <br><br>
+            <label for="">7.CORE JAVA</label>
+            <input type="number" id="cj" value=""> <br><br>
+            <button class="re" onclick="result()">RESULT</button>
+
+            <label for="" class="total" >TOTAL</label>
+            <input type="" id="total" value="">
+
+            <label for="" class="total">PERCENTAGE</label>
+            <input type="" id="percentage" value="">
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <script>
+        function result() {
+            let a = parseInt(document.getElementById("c").value)
+            let b = parseInt(document.getElementById("cl").value)
+            let c = parseInt(document.getElementById("db").value)
+            let d = parseInt(document.getElementById("ht").value)
+            let e = parseInt(document.getElementById("cs").value)
+            let f = parseInt(document.getElementById("ph").value)
+            let g = parseInt(document.getElementById("cj").value)
+            let total=a+b+c+d+e+f+g;
+            let percentage=total*100/350;
+            document.getElementById("total").value=total
+            document.getElementById("percentage").value=percentage
+           
+        }
+    </script>
+</body>
+
+</html>

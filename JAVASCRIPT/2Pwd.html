@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Password</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <h1>• Create password field with show hide functionalities 
+    </h1>
+    <label for="Password">Enter Password:</label>
+    <input type="password" name="" id="pwd"  >
+    <br>
+    <br>
+ 
+    <div>
+    <input type="checkbox" name="" onclick="showpwd()">
+    <label for="">Show Password</label>
+</div>
+
+    <script>
+        function showpwd() {
+            let p = document.getElementById("pwd");
+            if (p.type == "password") {
+                p.type = "text";
+            } else {
+               p.type = "password"; 
+            }
+        }
+    </script>
+</body>
+</html>
