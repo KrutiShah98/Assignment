@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling Tickling</title>
+</head>
+
+<body>
+
+    <!-- Jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <div class="body">
+
+        <div class="great-great-grand-parent">
+            body( great-great-grand-parent)
+            <div class="great-grand-parent">
+               div( great-grand-parent)
+                <div class="Grand-Parent">
+                    ul(Grand-Parent)
+                    <div class="Parent">
+                        li(direct-Parent)
+                     <div class="span">
+                        span
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Script CSS -->
+    <script>
+        $("*").css({
+            padding: "10px"
+        })
+
+        $("body").css({
+            border: "1px solid red"
+            
+
+        })
+        $(".body").css({
+            border: "1px solid red",
+        })
+        $(".great-grand-parent").css({
+            border: "1px solid red",
+            width:"400px"
+
+        })
+        $(".Grand-Parent").css({
+            border: "1px solid red"
+        })
+        $(".Parent").css({
+            border: "1px solid red"
+        })
+        $(".span").css({
+            border: "1px solid grey"
+        })
+    </script>
+
+</body>
+
+</html>

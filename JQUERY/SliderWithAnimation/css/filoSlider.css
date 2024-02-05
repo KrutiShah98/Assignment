@@ -1,0 +1,40 @@
+#slider {
+position: relative;
+width: 640px;
+height: 480px;
+margin: auto;
+overflow: hidden;
+border: 5px solid #fff;
+box-shadow: 0px 0px 5px 0px #888;
+}
+#slider img {
+width: 100%;
+height: 100%;
+}
+#slider .navigation {
+position: absolute;
+bottom: 0;
+left: 0;
+text-align: center;
+z-index: 99;
+margin: 0;
+width: 100%;
+list-style: none;
+padding: 0;
+}
+#slider .navigation li {
+display: inline-block;
+background: #fff;
+width: 10px;
+height: 10px;
+margin: 5px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px 0px #444;
+}
+#slider .navigation li.active {
+box-shadow: inset 0px 0px 0px 3px #fff;
+background: #444;
+}
+#slider .navigation li:hover {
+cursor: pointer;
+}

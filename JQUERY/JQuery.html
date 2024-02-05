@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Basic, Effects & Advanced</title>
+</head>
+
+<body>
+    <h1>• What is jQuery?</h1>
+    <h2>jQuery is a lightweight, "write less, do more", JavaScript library.
+        <br>
+        The purpose of jQuery is to make it much easier to use JavaScript on your website.
+    </h2>
+    <hr>
+    <h1>• How to Apply CSS Using JQuery
+    </h1>
+    <!-- jQuery cdn -->
+    <!-- <script src="../../JQuery/JS/jquery-3.7.1.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $('body').css({
+            backgroundColor: "black",
+            color: "orange",
+            fontSize: "10px"
+        }) 
+    </script>
+
+    <h1>How to Add Class and Remove Class in
+        Jquery</h1>
+    <h2>
+        addClass(): - Adds one or more classes to the selected elements. <br>
+        removeClass(): - Removes one or more classes from the selected elements.
+    </h2>
+
+<h1>JQuery Animation?</h1>
+<h2>$("button").click(function(){
+    $("div").animate({left: '250px'});
+  }); </h2>
+</body>
+
+</html>
