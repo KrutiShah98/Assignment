@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    .card-width{
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .col-content{
+        text-align:start;
+        margin-left: 1%;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Carousel</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../Bootstrap Website/Images/pexels-pixabay-259915.jpg" class="d-block w-100" alt="..."  style="height: 500px;">
+          </div>
+          <div class="carousel-item">
+            <img src="../Bootstrap Website/Images/download.jfif" class="d-block w-100" alt="..." style="height: 500px;">
+          </div>
+          <div class="carousel-item">
+            <img src="../Bootstrap Website/Images/pexels-pixabay-259915.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<br>
+<br>
+
+<!-- cards -->
+<div class="card-width">
+      <div class="card " style="width: 18rem; margin-left: 60px;border: none;">
+        <img src="../Bootstrap Website/Images/pexels-rovenimagescom-949587.jpg" class="card-img-top" alt="..." style="height: 100px;width:100px;border-radius: 50%;margin: 0 auto;">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Card title</h5>
+          <p class="card-text" style="text-align: center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary" style="margin:0 50px;">View Details>></a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem; margin-left: 50px;border: none;">
+        <img src="../Bootstrap Website/Images/pexels-rovenimagescom-949587.jpg" class="card-img-top" alt="..." style="height: 100px;width:100px;border-radius: 50%;margin: 0 auto;">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Card title</h5>
+          <p class="card-text" style="text-align: center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary" style="margin:0 50px;">View Details>></a>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem; margin-left: 50px;border: none;">
+        <img src="../Bootstrap Website/Images/pexels-rovenimagescom-949587.jpg" class="card-img-top" alt="..." style="height: 100px;width:100px;border-radius: 50%;margin: 0 auto;">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Card title</h5>
+          <p class="card-text" style="text-align: center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary" style="margin:0 50px;">View Details>></a>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+    <br>
+    <hr>
+    <br><br>
+    <br>
+    <!-- gutters -->
+    <div class="container-fluid ">
+    <div class="row g-0 text-center">
+        <div class="col-sm-6 col-md-8 py-5">
+            <h1 class="col-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            </h1>
+            <p class="col-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur dolorum consequatur pariatur vel deleniti earum perferendis animi libero quam.</p>
+        </div>
+        <div class="col-6 col-md-4">
+            <img class="img-fluid"  src="../Bootstrap Website/Images/pexels-pixabay-259915.jpg" alt="" width="500px" height="500px">
+        </div>
+      </div>
+    </div>
+<br>
+<br>
+<br>
+    <!-- gutters-2 -->
+
+    <div class="container-fluid ">
+        <div class="row g-0 text-center">
+
+            <div class="col-6 col-md-4">
+                <img class="img-fluid"  src="../Bootstrap Website/Images/pexels-pixabay-259915.jpg" alt="" width="500px" height="500px">
+            </div>
+            <div class="col-sm-6 col-md-8 py-5">
+                <h1 class="col-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                </h1>
+                <p class="col-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur dolorum consequatur pariatur vel deleniti earum perferendis animi libero quam.</p>
+            </div>
+       
+          </div>
+        </div>
+    
+</body>
+
+</html>
