@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Math Operation </title>
+</head>
+<h1>• Create basic math operation in JS</h1>
+<style>
+    * {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color:antiquewhite;
+    }
+
+    .box-1 {
+        width: 400px;
+        height: 300px;
+        border: 2px solid black;
+        margin: 50px auto;
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(115, 85, 170);
+
+    }
+
+    .box-2 {
+        width: 300px;
+        height: 50px;
+        border: 2px solid black;
+        margin: 50px auto;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    button {
+        /* padding: 20px; */
+        font-size: large;
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        color: antiquewhite;
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="box-1">
+        <br>
+        <label for="FirstNUmber" class="Fn">Enter 1st Number: </label>
+        <input type="number" class="i1 "  id="first" value=""><br><br>
+
+
+        <label for="SecondNumber" class="Sn"  >Enter 2nd Number: </label>
+        <input type="number" id="sec" value=""> <br><br>
+
+
+        <button onclick="addition()">+</button>
+        <button onclick="subtraction()">-</button>
+        <button onclick="multi()">*</button><br><br>
+        <button onclick="divide()">/</button>
+        <button onclick="percentage()">%</button>
+
+        <br>
+        <br><br>
+        <label for="total" >Answer</label>
+        <input type="" id="ans">
+
+  </div>
+   
+
+    <script>
+        function addition(){
+       let a=parseInt(document.getElementById("first").value);
+       let b=parseInt(document.getElementById("sec").value);
+       let sum=a+b;
+    document.getElementById("ans").value=sum
+        }
+
+        function subtraction(){
+       let a=parseInt(document.getElementById("first").value);
+       let b=parseInt(document.getElementById("sec").value);
+       let sum=a-b;
+    document.getElementById("ans").value=sum
+        }
+
+
+        function multi(){
+       let a=parseInt(document.getElementById("first").value);
+       let b=parseInt(document.getElementById("sec").value);
+       let sum=a*b;
+    document.getElementById("ans").value=sum
+        }
+
+
+        function divide(){
+       let a=parseInt(document.getElementById("first").value);
+       let b=parseInt(document.getElementById("sec").value);
+       let sum=a/b;
+    document.getElementById("ans").value=sum
+        }
+
+        function percentage(){
+       let a=parseInt(document.getElementById("first").value);
+       let b=parseInt(document.getElementById("sec").value);
+       let sum=a*b/100;
+    document.getElementById("ans").value=sum
+        }
+
+
+
+    </script>
+</body>
+
+</html>
