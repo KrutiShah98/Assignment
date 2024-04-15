@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Area</title>
+</head>
+<style>
+    body {
+        /* background-color: black; */
+        color: rgb(13, 15, 17);
+        text-align: center;
+        background: rgb(195, 193, 34);
+        background: radial-gradient(circle, rgba(195, 193, 34, 0.6026785714285714) 0%, rgba(29, 12, 31, 0.4598214285714286) 100%);
+        font-weight: 700;
+    }
+
+    label {
+        font-size: larger;
+        display: inline-block;
+        width: 200px;
+    }
+
+    button {
+        font-size: larger;
+        color: rgb(22, 16, 8);
+        padding: 10px;
+        border: 1px solid white;
+        background: rgb(238, 174, 202);
+        background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    }
+</style>
+
+<body>
+
+    <h1>
+        Find Triangle Area
+
+    </h1>
+    <label for="base">Enter Base Value:</label>
+    <input type="number" id="base">
+    <br>
+    <br>
+    <br>
+    <label for="base">Enter Height Value:</label>
+    <input type="number" id="height">
+    <br>
+    <br>
+    <br>
+
+    <button onclick="calculatearea()">Calculate</button>
+    <br>
+    <br>
+    <input type="number" name="" id="calc">
+    <script>
+        function calculatearea(){
+        var base =parseInt(document.getElementById('base').value);
+        var height = parseInt(document.getElementById('height').value);
+        var area = 0.5 * base * height;//Area of a Triangle = A = ½ (b × h) square units
+    // document.write('your answer is'+area);
+    document.getElementById('calc').value=area;
+}
+    </script>
+</body>
+
+</html>

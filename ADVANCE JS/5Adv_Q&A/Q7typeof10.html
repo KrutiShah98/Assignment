@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check if typeof '10' is exactly equal to 10. If not make it exactly equal?</title>
+</head>
+<body>
+    <h1>Q.7 Check if typeof '10' is exactly equal to 10. If not make it exactly equal?</h1>
+    <p> typeof '10' would return 'string', and it wouldn't be exactly equal to the number 10.
+
+        To convert the string '10' to the number 10, you can use the parseInt() function or the Number() constructor.</p>
+
+    <script>
+    if (typeof '10'!==Number)
+     {
+    var n=parseInt('10');
+    if (n===10) {
+        document.write("10 is exactly equal to 10")
+    } else {
+        document.write("10 is not exactly equal to 10")
+        
+    }    
+    } else {
+        document.write("10 is alredy number")
+
+    }
+
+    </script>
+</body>
+</html>
