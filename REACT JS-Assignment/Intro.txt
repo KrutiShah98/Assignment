@@ -1,0 +1,74 @@
+MODULE: 9 ReactJs Intro
+
+
+• What is React Js?
+=> It is Free and open source javascript library for bulding user interface based on Components.
+    It is Maintained by Meta.
+    It can be used to develop Single page Apllication.
+
+• What is NPM in React Js?
+=>  NPM Stand for Node  package manager.
+    It is package manager for JavaScript, 
+    and it helps developers manage the various libraries and tools needed to build React applications. 
+
+    Key Features and Functions of NPM in React.js
+
+    1>Package Management
+    2>Script Running
+    3>Global vs. Local Installation
+    4>Community and Registry
+
+• What is Role of Node Js in react Js?
+=> Node JS is Run-time Environment It allows developers to write JavaScript code that runs
+     outside of a browser 
+    NOde js is used to build backend  of Web applications.and 
+    React js is used for build interactive user interface 
+
+• What is CLI command In React Js?
+=>CLI stand for command line interface it use for project creation(traditional method)
+
+• What is Components in React Js?
+=> components are block of code.which we can re-use
+    it is the combination of html,css,javascript
+    using of components can build ui easily 
+=> types of components 
+
+                1] function components : simple javascript function 
+                2] class components : ES6 classes to create class components
+                class components litte more complex than function components
+
+• What is Header and Content Components in React Js?
+=> Both are component where each and every component have block of code.
+    And header component is stored navbar and heading tags.
+    Content component is stored content of the website
+
+• How to install React Js on Windows, Linux Operating System? How to Install
+    NPM and How to check version of NPM? 
+=> Steps are below : 
+                1]Go to node.org 
+                2]download Lts version (Long Term Support) and click the download. 
+                3]Install Node Js on your system and set all next to all pages and checked all checkbox. 
+                4]check node js on you system using terminal write (node) 
+                5]write  npm -v (to check version of node)       
+
+• How to check version of React Js?
+=>Approach 1: Using the package.json file
+    npx create-react-app name_of_the_app
+    The package.json file contains a lot of information in the name/value pairs in JSON format. 
+=>Approach 2: Using the command line
+    npm view react version
+=>Approach 3: Using the version property of default import from React
+    import from React
+    The default import from React library is an object that has a version property on it.
+    We can use this property inside our JSX elements  
+
+    Syntax:
+    import React from 'react';
+    let a = React.version
+
+• How to change in components of React Js?
+=>Using usestate hook we can change in component.
+    Hook is a special function and with hooks we can manipulation in component.
+    And it is return array. Where the first is default value and the second is changing method with we can change the value of usestate.
+    For ex. let [count,Setcount]=usestate(0);   
+  
