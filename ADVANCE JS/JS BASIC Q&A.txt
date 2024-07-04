@@ -122,3 +122,32 @@ Q.57 how many type of JS Event? How to use it ?
 
 Q.60 What is Bom vs Dom in JS?
 =>BOM (Browser Object Model):
+ interactions with the browser itself, including the window, location, navigator, and history objects. 
+ =>provides methods to control the browser window, navigate between pages, and obtain browser information.
+ for ex.
+ window.open(): Opens a new browser window or tab.
+window.close(): Closes the current browser window or tab.
+window.alert(): Displays an alert box.
+window.setTimeout(), window.setInterval(): Executes code after a specified delay or at specified intervals.
+
+==>DOM (Document Object Model): 
+    => interactions with the content of the web document.
+    =>methods to manipulate the content, structure, and style of the document.
+    =>for eg.
+        Document object
+        Element object
+        Events
+
+Q.61 Array vs object defences in JS?
+==>Array:
+    The data inside an array is known as Elements.
+    The elements can be manipulated using [].  
+    The elements can be popped out of an array using the pop() function.
+    Iterating through an array is possible using For loop, For..in, For..of, and ForEach().
+
+==>Object:
+    The data inside objects are known as Properties which consists of a key and a value.
+    The properties can be manipulated using both.DOT notation and [].
+    The keys or properties can be deleted by using the delete keyword.
+    Iterating through an array of objects is possible using For..in, For..of, and ForEach(). 
+       
