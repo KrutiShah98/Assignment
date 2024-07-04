@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Q.42 Write a JavaScript program to compare two objects? </h1>
+
+    <script>
+        function compareobj(obj1, obj2) {
+            let string1 = JSON.stringify(obj1);
+            let string2 = JSON.stringify(obj2);
+            return string1 === string2;
+
+        }
+        let obj1 = { name: "John", age: 30 };
+        let obj2 = { name: "John", age: 30 };
+        let obj3 = { name: "Jane", age: 25 };
+
+       console.log(compareobj(obj1,obj2)); 
+       console.log(compareobj(obj2,obj3)); 
+
+    </script>
+</body>
+
+</html>

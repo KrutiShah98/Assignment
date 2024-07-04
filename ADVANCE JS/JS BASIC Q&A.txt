@@ -1,0 +1,124 @@
+Q.1 What is JavaScript. How to use it?
+=> JavaScript is a high level programming language.and it is used for Web development.
+    It allows developers to add interactivity, animations, and dynamic content to websites.
+
+Q.2 How many type of Variable in JavaScript?
+=> There are 3 types of Variable.
+    1.var: it can be redeclare and reassign
+    2.let: redeclare not possible reassign can be development
+    3:const: both are not possible
+
+Q.3 Define a Data Types in js? 
+=> 1.Primitive Data Types:
+     number
+     string
+     boolean
+     undefined
+     null
+     symbol
+     bigint
+
+=> 2.Non-Primitive Data Types:
+    array
+    object  
+
+Q.5 What the deference between undefined and undeclare in JavaScript? 
+=> Undeclared: A variable that has not been created.
+   Undefined: A variable that is declared, but does not have a value 
+
+Q.6 Using console.log() print out the following statement: The quote 'There is no exercise 
+    better for the heart than reaching down and lifting people up.' by John Holmes teaches us to 
+    help one another. Using console.log() print out the following quote by Mother Teresa:  
+
+=>  <script>
+        console.log("There is no exercise better for the heart than reaching down and lifting people up.by John Holmes teaches us to help one another.Using console.log() print out the following quote by Mother Teresa: ");
+    </script>              
+
+Q.7 Check if typeof '10' is exactly equal to 10. If not make it exactly equal?
+=>  <script>
+    let n=10;
+    console.log(typeof(n));
+     </script>    
+
+Q.10 What is Condition Statement?
+=> Condition statement allows to execute code blocks based on whether a specified condition is true or false.
+ for eg. if (condition) {
+        // Code to be executed if the condition is true
+        } else {
+        // Code to be executed if the condition is false
+        }
+
+Q.14 Write a JavaScript exercise to get the extension of a filename.? 
+
+Q.15 What is the result of the expression (5 > 3 && 2 < 4)?
+=>both operands are true, the entire expression (5 > 3 && 2 < 4) evaluates to true.
+
+Q.16 What is the result of the expression (true && 1 && "hello")? 
+=> <script>
+    let result = true && 1 && "hello";
+
+// Check if the result is true
+    if (result === true) {
+     console.log("The result is true.");
+    } else {
+    console.log("The result is false.");
+    }   
+            result is false
+    </script> 
+
+Q.18 What is a Loop and Switch Case in JavaScript define that ?
+=> Loops are structures that allow you to repeat a block of code multiple times. 
+    for eg.for Loop
+            while looop and do ...while Loop
+=> The switch statement is used to perform different actions based on different conditions.
+
+Q.19 What is the use of is Nan function? 
+=> It is used to determine whether a value is NaN (Not-a-Number) or not.
+    If the argument cannot be converted to a number, isNaN() returns true. Otherwise, it returns false.
+    for e.g 
+    isNaN(123);       // false, 123 is a number
+    isNaN('123');     // false, '123' can be converted to a number
+    isNaN('hello');   // true, 'hello' cannot be converted to a number
+    isNaN(true);      // false, true can be converted to the number 1
+
+Q.20 What is the difference between && and || in JavaScript? 
+=> Logical AND (&&):
+    The && operator returns true if both operands are true, otherwise, it returns false.    
+=> Logical OR (||):
+    The || operator returns true if at least one of the operands is true. If both operands are false, it returns false. 
+
+Q.21 What is the use of Void (0)? 
+
+
+Q.47 What is the drawback of declaring methods directly in JavaScript objects? 
+=>  Method duplication
+=> Consumes More memory
+=>  inefficient 
+
+Q.54 Form Validtion in JS? 
+=> Form validation in JavaScript is the process of ensuring that user input in a form meets certain requirements or constraints 
+    before it is submitted to the server. 
+
+Q.57 how many type of JS Event? How to use it ?
+=> 1. Mouse Events
+    click
+    dblclick 
+    mouseover
+    mouseout
+    mousedown
+    mouseup
+
+
+<button id="myButton">Click Me</button>
+<script>
+  document.getElementById('myButton').addEventListener('click', function() {
+    alert('Button was clicked!');
+  });
+</script>
+
+=>2. Keyboard Events:keydown,keyup,keypress
+=>3. Form Events:submit,change,focus,blur
+=>4. Window Events:load,unload,resize,scroll
+
+Q.60 What is Bom vs Dom in JS?
+=>BOM (Browser Object Model):

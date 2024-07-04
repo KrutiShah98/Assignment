@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Form Validation</title>
+  <style>
+    .error { color: red; }
+    .valid { color: green; }
+  </style>
+</head>
+<body>
+  <form id="myForm">
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <span id="emailError" class="error"></span><br><br>
+    
+    <label for="number">Number:</label><br>
+    <input type="number" id="number" name="number" required><br>
+    <span id="numberError" class="error"></span><br><br>
+    
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br>
+    <span id="passwordError" class="error"></span><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    const form = document.getElementById('myForm');
+    const email = document.getElementById('email');
+    const number = document.getElementById('number');
+    const password = document.getElementById('password');
+    const emailError = document.getElementById('emailError');
+    const numberError = document.getElementById('numberError');
+    const passwordError = document.getElementById('passwordError');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      validateEmail();
+      validateNumber();
+      validatePassword();
+      if (emailError.textContent === '' && numberError.textContent === '' && passwordError.textContent === '') {
+        form.submit();
+      }
+    });
+
+    email.addEventListener('input', validateEmail);
+    number.addEventListener('input', validateNumber);
+    password.addEventListener('input', validatePassword);
+
+    function validateEmail() {
+      const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      emailError.textContent = re.test(email.value) ? '' : 'Please enter a valid email.';
+    }
+
+    function validateNumber() {
+      numberError.textContent = !isNaN(number.value) && Number.isInteger(parseFloat(number.value)) ? '' : 'Please enter a valid number.';
+    }
+
+    function validatePassword() {
+      passwordError.textContent = password.value.length >= 6 ? '' : 'Password must be at least 6 characters.';
+    }
+  </script>
+</body>
+</html>
