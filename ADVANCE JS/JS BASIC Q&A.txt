@@ -49,6 +49,11 @@ Q.10 What is Condition Statement?
         }
 
 Q.14 Write a JavaScript exercise to get the extension of a filename.? 
+=>
+let filename = "index.html";
+console.log(filename.split(".").pop());
+filename = "main.js";
+console.log(filename.split(".").pop());
 
 Q.15 What is the result of the expression (5 > 3 && 2 < 4)?
 =>both operands are true, the entire expression (5 > 3 && 2 < 4) evaluates to true.
@@ -87,8 +92,98 @@ Q.20 What is the difference between && and || in JavaScript?
 => Logical OR (||):
     The || operator returns true if at least one of the operands is true. If both operands are false, it returns false. 
 
-Q.21 What is the use of Void (0)? 
+            Q.21 What is the use of Void (0)? 
+Q.27 Write to find minimum number among 3 numbers using ternary operator in JS?
+ let num1 = 10;
+ let num2 = 9;
+ let num3 = 20;
 
+num1 <= num2 && num1 <= num3 ? console.log(num1 + " is smallest") : num2 <= num1 && num2 <= num3 ? console.log(num2 + " is smallest ") : console.log(num3 + " is smallest ");            
+
+Q.32 Write to print factorial of given number?
+let factNum;
+function factorial(factNum) {
+  for (i = 1; i <= factNum; i++) {
+    console.log(factorial(5));
+  }
+  return factNum * (factNum - 1);
+}
+// console.log(factorial(5), "is");
+
+
+ Q.33 Write to print Fibonacci series up to given numbers?
+
+// let fibonum1 = 1;
+// let fibonum2 = 2;
+// let fibonacci;
+// let i;
+// for (i = 1; i <=  i++) {
+//   fibonacci = fibonum1 + fibonum2;
+//   fibonum1 = fibonum2;
+//   fibonum2 = fibonacci;
+//   console.log(fibonacci);
+// }
+
+
+ Q.37 Use console.log() and escape characters to print the following pattern in JS?
+// 1 1 1 1 1
+// 2 1 2 4 8
+// 3 1 3 9 27
+// 4 1 4 16 64
+// 5 1 5 25 125
+
+for (let i = 1; i <= 5; i++) {
+  for (let j = 1; j <= 5; j++) {
+    if (j == 1) {
+      document.write(i + " ");
+    }
+    if (j == 2) {
+      document.write(1 + " ");
+    }
+    if (j == 3) {
+      document.write(i + " ");
+    }
+    if (j == 4) {
+      document.write(i * i + " ");
+    }
+  }
+  document.write(i * i * i + " ");
+  document.write("<br>");
+}
+
+// 40 Q.40 Write a JavaScript Program to display the current day and time in the following format.
+// Sample Output: Today is Friday. Current Time is 12 PM: 12 : 22 2 ?
+
+let currentDate = new Date();
+console.log(currentDate);
+
+let today = currentDate.getDay();
+let Hours = currentDate.getHours();
+let Mins = currentDate.getMinutes();
+let sec = currentDate.getSeconds();
+
+if (today == 1) {
+  today = "Monday";
+}
+if (today == 2) {
+  today = "Tuesday";
+}
+if (today == 3) {
+  today = "Wednesday";
+}
+if (today == 4) {
+  today = "Thursday";
+}
+if (today == 5) {
+  today = "Friday";
+}
+if (today == 6) {
+  today = "Saturday";
+}
+if (today == 7) {
+  today = "Sunday";
+}
+console.log("Today Is ", today, "current Time Is:", Hours, "PM", Mins, "Min", sec, ")
 
 Q.47 What is the drawback of declaring methods directly in JavaScript objects? 
 =>  Method duplication
