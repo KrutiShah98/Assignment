@@ -16,7 +16,7 @@ setNumber(0);
   return (
     <div className='main'>
     <div className='container' style={{height:'100%'}}>
-   
+   <h2 style={{color:"white"}}>Counter App</h2>
         <h1>{number}</h1>
         <button  className='btnall' onClick={handleinc}>Increment</button>
         <button  className='btnall' onClick={handledec}>Decrement</button>
